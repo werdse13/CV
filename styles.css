@@ -1,0 +1,98 @@
+.grid-container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+body{
+    background-color: #B0B0B0;
+}
+
+img {height:250px; width: auto;
+}
+
+.linked_img {
+  height: 30px;
+  padding-top: 0; /* This needs fixing, logos arent spaced correctly*/
+}
+
+.self_img{
+    transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
+}
+
+.header_p{
+  font-size: 30px; 
+  margin-bottom: 5px; 
+  margin-top: 60px;
+  transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
+
+}
+
+header {font-size: 250%;
+        color:black;
+        margin-top:  0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 250px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
+
+
+}
+
+
+h1 {
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+h2 {
+  font-size: 400%;
+}
+
+p {
+  font-size: 200%;
+}
+
+a:link {
+  cursor: pointer;
+}
+
+
+.footer { grid-area: footer;
+background-color: white;
+margin: 10px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+ }
+
+.main { grid-area: main;
+margin: 10px 10px 10px 10px;
+border: 3px;
+}
+
+.content{
+    padding: 10px 10px 10px 10px;
+    margin:  10px 10px 500px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+}
