@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 <title>Paul McCabe</title>
-<meta charset="utf-8">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -13,22 +16,23 @@
       <div class="header-top">
         <div>
           <h1>Paul McCabe</h1>
-          <div><p class="header_p">Computer Science</p>
+          <div>
+            <p class="header_p">Computer Science</p>
             <br>
             <a href="https://github.com/werdse13" target="_blank"><img class="linked_img" src="github.png" alt="GitHub Logo"></a>
             <a href="https://www.linkedin.com/in/paul-mccabe-5a5430224" target="_blank"><img class="linked_img" src="linkedin-logo.jpg" alt="LinkedIn Logo"></a>
-            <p class="header_p">PaulMcCabe715@gmail.com<br></p>
+            <p class="header_p">PaulMcCabe715@gmail.com</p>
           </div>
         </div>
         <img class="self_img" src="graduation_photo_low_def.jpg" alt="Photo of me on my graduation day.">
       </div>
       <ul>
-        <li onclick="scrollAbout()">About</li>
-        <li onclick="scrollSkills()">Skills</li>
-        <li onclick="scrollEducation()">Education</li>
-        <li onclick="scrollExperience()">Experience</li>
-        <li onclick="scrollProjects()">Projects</li>
-        <li onclick="scrollContact()">Contact</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
 
@@ -38,7 +42,7 @@
 
 
     <div class="main">
-      <div class="content">
+      <div class="content" id="about">
       <h2>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -46,7 +50,7 @@
       </p>
       </div>
 
-      <div class="content">
+      <div class="content" id="skills">
       <h2>Skills</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -54,7 +58,7 @@
       </p>
       </div>
 
-      <div class="content">
+      <div class="content" id="education">
       <h2>Eduation</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -62,7 +66,7 @@
       </p>
       </div>
 
-      <div class="content">
+      <div class="content" id="experience">
       <h2>Experience</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -70,17 +74,17 @@
       </p>
       </div>
 
-      <div id="projects">
-      <div class="content">
+
+      <div class="content" id="projects">
       <h2>Projects</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       </div>
-      </div>
 
-      <div class="content">
+
+      <div class="content" id="contact">
       <h2>Contact</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -92,7 +96,7 @@
 
     <footer>
       <div class="footer">
-        Footer
+        <h3>Footer</h3>
       </div>
     </footer>
   </div><!--grid-container-->
