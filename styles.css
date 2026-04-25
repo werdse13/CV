@@ -9,29 +9,38 @@
     "footer";
 }
 
-body{
-    background-color: #B0B0B0;
+html {
+  scroll-behavior: smooth;
 }
 
-img {height:250px; width: auto;
+body{
+    background-color: #f4d738;
 }
+
+/*img {height:280px; width: auto;
+}*/
 
 .linked_img {
-  height: 30px;
-  padding-top: 0; /* This needs fixing, logos arent spaced correctly*/
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
+
 }
 
 .self_img{
-    transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
+    transition: 0.4s; 
+    height:280px; 
+    width: auto;
 }
 
 .header_p{
   font-size: 30px; 
   margin-bottom: 5px; 
   margin-top: 60px;
-  transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
+  transition: 0.4s;
 
 }
+
 
 header {font-size: 250%;
         color:black;
@@ -42,19 +51,28 @@ header {font-size: 250%;
         border-style: solid;
         border-width: 2px;
         border-color: black;
-        background-color: white;
+        background-color: #bafca2;
         position: sticky;
         top: 0;
         grid-area: header;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-        transition: 0.4s; /* for JS to make header smaller when scrolled but cant get it to work yet*/
-
+        flex-direction: column;
+        box-shadow:0;
+        transition: 0.4s; 
 
 }
+/* Top row inside header: name/info on left, photo on right */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
+h1, h2 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+}
 
 h1 {
   margin-bottom: 0%;
@@ -67,10 +85,7 @@ h2 {
 
 p {
   font-size: 200%;
-}
-
-a:link {
-  cursor: pointer;
+      font-family: 'Sora', sans-serif;
 }
 
 
@@ -91,8 +106,62 @@ border: 3px;
 .content{
     padding: 10px 10px 10px 10px;
     margin:  10px 10px 500px 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    background-color: white;
+  background-color: #c4a1ff;
+  border: 3px solid #000000;
+  border-radius: 6px;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+}
+
+
+
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0px;
+  background-color: #ff6b6b;
+  padding: 0;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+      font-family: 'Sora', sans-serif;
+}
+
+ul li {
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: #ff6b6b;
+  font-size: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+/*
+ul li a {
+
+}
+*/
+
+ul li:hover {
+  background-color: #dd5c5c;
+}
+
+
+@media (min-width: 992px) {
+  .content:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
 }

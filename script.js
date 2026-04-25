@@ -2,33 +2,36 @@ window.onscroll = function(){scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.querySelector("header").style.fontSize = "100%";
-    document.querySelector(".self_img").style.height = "150px";
-    document.querySelector(".header_p").style.fontSize = "15px";
-
+    document.querySelector("header").style.fontSize = "140%";
+    document.querySelector(".self_img").style.height = "200px";
+    document.querySelector(".header_p").style.fontSize = "20px";
   } else {
     document.querySelector("header").style.fontSize = "250%";
-    document.querySelector(".self_img").style.height = "250px";
+    document.querySelector(".self_img").style.height = "280px";
     document.querySelector(".header_p").style.fontSize = "30px";
   }
 }
 
-/*window.onscroll = function(){scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.querySelector("h1").style.fontSize = "10%";
-    document.querySelector(".self_img").style.height = "150px";
-  } else {
-    document.querySelector("h1").style.fontSize = "100%";
-    document.querySelector(".self_img").style.height = "250px";
+  function scrollAbout() {
+    window.scrollTo(0, 0)
   }
-} */
-
   function scrollSkills() {
-    window.scrollTo(0, 1000)
+    window.scrollTo(0, 1000);
   }
 
   function scrollEducation() {
     window.scrollTo(0, 2000)
+  }
+
+  function scrollExperience() {
+    window.scrollTo(0, 3000)
+  }
+
+    function scrollProjects() {
+    window.scrollTo(0, 4000)
+  }
+
+  function scrollContact() {
+    window.scrollTo(0, 5000)
   }
