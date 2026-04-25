@@ -21,17 +21,17 @@ function scrollFunction() {
   }
 
   function scrollEducation() {
-    window.scrollTo(0, 2000)
+    window.scrollTo(0, 2200)
   }
 
   function scrollExperience() {
-    window.scrollTo(0, 3000)
+    window.scrollTo(0, 3300)
   }
 
     function scrollProjects() {
-    window.scrollTo(0, 4000)
+    window.scrollTo(0, 4400)
   }
 
   function scrollContact() {
-    window.scrollTo(0, 5000)
+    window.scrollTo(0, 5500)
   }
