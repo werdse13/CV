@@ -40,14 +40,14 @@ border: 3px;
 
 .linked_img {
   height: 40px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 5px;
-          transition: height 0.4s ease; 
+  transition: height 0.4s ease; 
 }
 
 header.scrolled .linked_img {
   height: 20px;
-    margin-top: 22px;
+  margin-top: 0px;
 
 }
 
@@ -58,7 +58,7 @@ header.scrolled .linked_img {
 
 .header_p{
   font-size: 15px; 
-  margin-bottom: 5px; 
+  margin-bottom: 0px; 
   margin-top: 0px;
   transition: font-size 0.4s ease;
 }
@@ -92,7 +92,7 @@ header {font-size: 100%;
 }
 
 header.scrolled {
-  font-size: 50%;}
+  font-size: 80%;}
 
 .header-top { /* Top row inside header with info on left and photo on right */
   display: flex;
@@ -112,7 +112,7 @@ header.scrolled {
     width: auto;
 }
 header.scrolled .self_img {
-  height: 100px;
+  height: 90px;
 }
 
 
@@ -214,14 +214,51 @@ border: 3px solid #000000;
 
 
 
-@media (max-width: 260px) { /* TINY SCREEN, removes the sticky attribute of the header so the content can be seen clearer */
+@media (max-width: 290px) { /* TINY SCREEN, removes the sticky attribute of the header so the content can be seen clearer */
         header {
           position:relative
         }
+
+        .self_img{
+          margin: auto;
+        }
+      }
+
+@media (max-width: 370px) { /* SMALL PHONE (my iphone 13 mini)*/
+      header{
+        font-size: 80%;
+      }
+      header.scrolled {
+        font-size: 70%;
       }
 
 
+      .header_p{
+        font-size: 10px;
+      }
+      header.scrolled .header_p{
+        font-size: 7px;
+      }
 
+
+      .linked_img{
+        height: 30px;
+      }
+      header.scrolled .linked_img {
+        height: 20px;
+      }
+
+        .self_img{
+        height: 95px;
+      }
+      header.scrolled .self_img {
+       height: 70px;
+}
+
+    ul li {
+      font-size: 10px;
+    }
+}
 
 
 
@@ -263,7 +300,7 @@ border: 3px solid #000000;
 
 
       .linked_img{
-        margin-top: 40px;
+        margin-top: 0px;
         height: 50px;
       }
       header.scrolled .linked_img {
@@ -307,13 +344,12 @@ border: 3px solid #000000;
 
 
       h2 {
-        font-size: 300%;
+        font-size: 250%;
       }
 
       p {
-        font-size: 150%;
-      font-family: 'Sora', sans-serif;
-    }
+        font-size: 120%;
+      }
 
 
 
@@ -323,19 +359,19 @@ border: 3px solid #000000;
           border: 3px solid #000000;
           border-radius: 6px;
           box-shadow: 4px 4px 0px 0px #000000;
-        font-size: 200%; 
+        font-size: 180%; 
       }
       header.scrolled {
-        font-size: 133.3%;
+        font-size: 70%;
       }
 
 
 
     .self_img{
-      height: 300px;
+      height: 220px;
     }
     header.scrolled .self_img{
-      height: 200px;
+      height: 80px;
     }
 
 
@@ -347,19 +383,19 @@ border: 3px solid #000000;
     transition: 0.4s;
   }
   header.scrolled .header_p{
-    font-size: 20px;
+    font-size: 10px;
   }
 
     .linked_img {
-      height: 80px;
-      margin-top: 50px;
+      height: 30px;
+      margin-top: 0px;
       margin-left: 5px;
-              transition: 0.4s; 
+      transition: 0.4s; 
 
     }
     header.scrolled .linked_img {
-      height: 53.3px;
-      margin-top: 30px;
+      height: 10px;
+      margin-top: 0px;
     }
 
 
@@ -377,6 +413,11 @@ border: 3px solid #000000;
 
       ul li{
         font-size: 30px;
+              transition: 0.4s; 
+
+      }
+      header.scrolled ul li{
+        font-size: 20px;
       }
 
     }
