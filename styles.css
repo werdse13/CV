@@ -312,9 +312,9 @@ border: 3px solid #000000;
 
 
 
-
-@media (max-width: 335px) { /* TINY SCREEN, removes the sticky attribute of the header so the content can be seen clearer */
-        header {
+/*
+@media (max-width: 200px) { /* TINY SCREEN, removes the sticky attribute of the header so the content can be seen clearer */
+        /*header {
           position:relative
         }
 
@@ -322,13 +322,13 @@ border: 3px solid #000000;
           margin: auto;
         }
       }
-
+*/
 @media (max-width: 370px) { /* SMALL PHONE (my iphone 13 mini)*/
       header{
-        font-size: 80%;
+        font-size: 60%;
       }
       header.scrolled {
-        font-size: 70%;
+        font-size: 50%;
       }
 
 
