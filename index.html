@@ -13,20 +13,15 @@
 
 <body>
   <div class="grid-container">
-    <header>
-      <div class="header-top">
+    <header id="top">
+      <div class="header-top" id="header">
         <div>
-          <h1>Paul McCabe</h1>
-          <div>
+          <h1><a href="#" onclick="scrollToTop(event)">Paul McCabe's CV</a></h1>
             <p class="header_p">Computer Science</p>
-            <a href="https://github.com/werdse13" target="_blank"><img class="linked_img" src="github.png" alt="GitHub Logo"></a>
-            <a href="https://www.linkedin.com/in/paul-mccabe-5a5430224" target="_blank"><img class="linked_img" src="linkedin-logo.jpg" alt="LinkedIn Logo"></a>
-            <p class="header_p">PaulMcCabe715@gmail.com</p>
-          </div>
         </div>
-        <img class="self_img" src="graduation_photo_low_def.jpg" alt="Photo of me on my graduation day.">
+        <a href="#" onclick="scrollToTop(event)"><img class="self_img" src="graduation-photo-background-removed.png" alt="Photo of Paul on graduation day."></a>
       </div>
-      <ul>
+      <ul class="nav">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
@@ -36,75 +31,139 @@
       </ul>
     </header>
 
-    <aside class="extra">
-      <h2>Extra</h2>
-      <p>Extra info</p>
-    </aside>
-    
-    <aside class="right">
+
+    <div class="right">
       <h2>Info</h2>
-      <p>Quick info</p>
-    </aside>
+      <h3 style="margin-bottom: 0%;">Location</h3>
+      <p style="margin-top: 2px;">Dublin, Ireland</p>
+      <h3 style="margin-bottom: 0%;">Email</h3>
+      <p style="margin-top: 2px;">PaulMcCabe715@gmail.com</p>
+      <h3 style="margin-bottom: 0%;">Links</h3>
+        <a href="https://github.com/werdse13" target="_blank"><img class="linked_img" src="github.png" alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/paul-mccabe-5a5430224" target="_blank"><img class="linked_img" src="linkedin-logo.jpg" alt="LinkedIn Logo"></a>
+      <h3 style="margin-bottom: 0%;">Seeking</h3>
+      <p style="margin-top: 2px;">Python or automation internship</p>
+    </div>
 
+    <div class="extra">
+      <h3>Interests</h3>
+      <ul class="skills">
+        <!--<li>Hardware tinkering & electronics repair</li>-->
+        <li>Automation & scripting</li>
+        <li>Cinema & film</li>
+        <li>Guitars and Music</li>
+      </ul>
+      <h3>Soft Skills</h3>
+      <ul class="skills">
+        <li>Technical troubleshooting & problem solving</li>
+        <li>Multitasking under pressure</li>
+        <li>Self-directed — built automation projects</li>
+      </ul>
+    </div>
 
-    <div class="main">
+      <div class="main">
+
       <div class="content" id="about">
-      <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+        <h2>About</h2>
+        <p>Aspiring software developer currently completing a Computer Science qualification at Technological University Dublin,
+transitioning from a Business Studies background. Experienced in building practical software solutions, including automation
+tools using Python and Playwright. Seeking a software development internship to apply and further develop technical and
+problem-solving skills in a real-world environment</p>
       </div>
 
       <div class="content" id="skills">
       <h2>Skills</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <ul class ="skills">
+          <li><b>Programming:</b> Python</li>
+          <li><b>Web:</b> HTML, CSS, JavaScript</li>
+          <li><b>Databases:</b> MySQL, PHPMyAdmin</li>
+          <li><b>Tools & Technologies:</b> Playwright, Discord API, Git, Linux</li>
+          <li><b>Concepts:</b> Object-Oriented Programming, Software Testing, Systems Analysis, ER Diagrams</li>
+        </ul>
       </div>
 
       <div class="content" id="education">
       <h2>Education</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h3>Bachelor of Business Studies</h3>
+  <p>Technological University Dublin — 2021–2025</p>
+  <br>
+
+  <h3>Post Grad Qualifier for MSc in Computer Science</h3>
+  <p>Technological University Dublin — Jan–June 2026, <em>(Progressing to MSc in Advanced Software Development, expected end 2027)</em></p>
+  <p><strong>Relevant Modules:</strong></p>
+  <ul class="skills">
+    <li>Object-Oriented Software Development (Python)</li>
+    <li>Web & User Interface Design (HTML, CSS)</li>
+    <li>Information Systems (MySQL, ER Diagrams)</li>
+    <li>Computer Architecture, Operating Systems & Networks (Linux)</li>
+    <li>Systems Analysis & Testing (requirements analysis, software design)</li>
+  </ul>
       </div>
 
       <div class="content" id="experience">
       <h2>Experience</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h3>The Arc Cinema, Drogheda</h3>
+  <p><em>June 2021 - present</em></p>
+  <ul class="skills">
+    <li>Delivered customer service in a fast-paced environment, handling transactions and resolving issues efficiently</li>
+    <li>Diagnosed and repaired arcade machines, developing technical troubleshooting and problem-solving skills</li>
+    <li>Managed cash handling processes, including till reconciliation and accuracy check</li>
+    <li>Supported operations across concessions, café, and restaurant services</li>
+    <li>Coordinated stock movement and equipment between locations</li>
+    <li>Demonstrated strong multitasking and communication skills under pressure</li>
+  </ul>
       </div>
 
 
       <div class="content" id="projects">
       <h2>Projects</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h3>Cinema Traffic Automation Bo</h3>
+  <p><em>Python, Playwright, Discord API</em></p>
+  <ul class="skills">
+    <li>Built an automation tool to analyse cinema occupancy levels by extracting real-time data from the Arc Cinema website</li>
+    <li>Developed a Discord bot interface allowing users to trigger scans and specify locations via command</li>
+    <li>Automated browser interactions using Playwright to navigate pages and collect showtime and availability data</li>
+    <li>Designed logic to estimate how busy a cinema would be throughout the day based on ticket availability</li>
+    <li>Delivered results directly through Discord, creating a simple and interactive user experience</li>
+
+  </ul>
       </div>
 
 
       <div class="content" id="contact">
-      <h2>Contact</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+        <h2>Contact</h2>
+        <form id="contactForm">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="button" onclick="submitForm()">Send Message</button>
+        </form>
       </div>
 
-    </div><!--main-->
+  </div><!--main-->
 
     <footer>
-        <h3>Footer</h3>
-    </footer>
-  </div><!--grid-container-->
+      <p> 
+        <p class="header_p">PaulMcCabe715@gmail.com</p>
+        <a href="https://github.com/werdse13" target="_blank"><img class="linked_img" src="github.png" alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/paul-mccabe-5a5430224" target="_blank"><img class="linked_img" src="linkedin-logo.jpg" alt="LinkedIn Logo"></a>
+      </p>
+  </footer>
 
-<script src="script.js"></script>`
+</div><!--grid-container-->
+<script src="script.js"></script>
 </body>
 </html>
