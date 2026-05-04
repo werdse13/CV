@@ -34,3 +34,13 @@ function scrollToTop(e) {
     behavior: 'smooth'
   });
 }
+
+
+
+const clickSound = document.getElementById("clickSound");
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  });
+});
